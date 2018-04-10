@@ -1,0 +1,12 @@
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import 'src/app/core/header/header.component.theme.scss';
+
+@include header-theme($app-theme);
+
+.header-component {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}

@@ -11,6 +11,7 @@ import { RecipeItemComponent } from "./recipe-list/recipe-item/recipe-item.compo
 import { DropdownDirective } from "../shared/dropdown.directive";
 import { RecipesRoutingModule } from "./recipes-routing.module";
 import { SharedModule } from "../shared/shared.module";
+import { MaterialModule } from "../material.module";
 
 @NgModule({
     declarations: [
@@ -26,6 +27,7 @@ import { SharedModule } from "../shared/shared.module";
         ReactiveFormsModule,
         RecipesRoutingModule,
         SharedModule,
+        MaterialModule
     ],
 })
 export class RecipesModule {

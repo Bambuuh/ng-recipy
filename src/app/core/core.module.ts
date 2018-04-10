@@ -6,6 +6,7 @@ import { AppRoutingModule } from "../app-routing.module";
 import { ShoppingListService } from "../shopping-list/shoppingList.service";
 import { RecipeService } from "../recipes/recipe.service";
 import { AuthService } from "../auth/auth.service";
+import { MaterialModule } from "../material.module";
 
 @NgModule({
     declarations: [
@@ -15,6 +16,7 @@ import { AuthService } from "../auth/auth.service";
     imports: [
         SharedModule,
         AppRoutingModule,
+        MaterialModule
     ],
     exports: [
         AppRoutingModule,

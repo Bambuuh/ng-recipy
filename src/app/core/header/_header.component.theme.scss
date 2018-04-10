@@ -1,0 +1,17 @@
+@import '~@angular/material/theming';
+@import 'src/app/app.theme.scss';
+
+// Define a mixin that accepts a theme and outputs the color styles for the component.
+@mixin header-theme($theme) {
+  // Extract whichever individual palettes you need from the theme.
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+
+  // Use mat-color to extract individual colors from a palette as necessary.
+  .testing-123 {
+    background-color: mat-color($primary);
+    a {
+      color: white;
+    }
+  }
+}
